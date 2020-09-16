@@ -1,0 +1,473 @@
+/*Google Font*/
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@400;700&display=swap');
+
+body {
+   font-family: 'Signika', sans-serif;
+   margin: 0;
+   padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/*Navbar*/
+nav {
+   background-color: #3ad29f;
+   padding: 5px;
+   /*sticky*/
+   position: sticky;
+   z-index: 1;
+   top: 0;
+}
+
+.menu {
+  overflow: hidden;
+}
+
+.menu a {
+  float: left;
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 12px 20px;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.menu a:hover {
+  font-weight: bold;
+  color: black;
+}
+
+.menu .icon {
+  display: none;
+}
+
+nav img{
+  text-align: center;
+}
+
+.menu .active{
+  background-color: #8deba7;
+  border-radius: 15px; 
+}
+
+nav img:hover{
+  cursor: pointer;
+  transform: scale(0.8);
+}
+
+
+/*Home*/
+.home{
+  height: 90vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 100%;
+}
+
+.deskripsi{
+  position: absolute;
+  top: 30%;
+  width: 50%;
+  text-align: center;
+  color: #000;
+}
+
+.deskripsi p{
+  font-size: 20px;
+  display: inline-block;
+  color: white;
+  background-color: #3ad29f;
+  border-radius: 5px; 
+}
+
+.deskripsi h1{
+  font-size: 50px;
+  margin-bottom: 2px;
+}
+
+.deskripsi h1:hover{
+  color: #4362c8;
+  font-weight: 500;
+  transform: scale(1.1);
+  -webkit-filter: drop-shadow(3px 1px 13px #fff) ;
+  filter: drop-shadow(3px 1px 13px #fff) ;
+  cursor: pointer;
+}
+
+.cari{
+  margin:auto;
+  max-width:300px;
+}
+
+.cari input[type=text]{
+  padding: 10px;
+  font-size: 17px;
+  background: #fff;
+  border-radius: 5px; 
+}
+
+.cari button{
+  padding: 10px;
+  background: #3ad29f;
+  color: white;
+  font-size: 17px;
+  cursor: pointer;
+  border-radius: 5px; 
+}
+
+.cari button:hover{
+  background: #2196F3;
+}
+
+/* Produk */
+#produk{
+  background-color: #3ad29f;
+}
+
+.flex-area-2{
+  width: 100%;
+  height: 60vh;
+  display: flex;
+}
+
+.slide{
+  position: relative;
+  background: #5c77fa;
+  height: 100%;
+  flex: 1;
+  border-right: 2px solid #3ad29f;
+  overflow: hidden;
+  transition: 1s ease-in-out;
+}
+
+.slide:hover{
+  flex-grow: 5;
+  cursor: pointer;
+}
+
+.slide:last-child{
+  border-right: none;
+}
+
+.teks-slide{
+  position: absolute;
+  border-radius: 8px;
+  bottom: 0;
+  margin: 40px;
+  padding: 30px;
+  background: #3ad29f;
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  transition: 1s;
+  transition-delay: 0.5s;
+  transform: translateY(100px);
+}
+
+.teks-slide h2{
+  color: #000;
+}
+
+.slide:hover .teks-slide{
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
+  transform: translateY(0);
+}
+
+.button {
+  background-color: #fff;
+  border: none;
+  color: #000;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 15px;
+}
+
+.button:hover{
+  background-color: yellow;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+/*Benefit*/
+
+.card {
+   background-color: #cffaf8;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+   border-radius: 5px; /*rounded*/
+   padding: 20px;
+   margin-left: 50px;
+   margin-right: 50px;
+   margin-bottom: 50px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+}
+
+.service{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  border-radius: 8px;
+  text-align: center;
+  margin: 5px;
+  padding: 10px;
+}
+
+.circle:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+  -webkit-filter: drop-shadow(3px 1px 13px #5c77fa);
+  filter: drop-shadow(3px 1px 13px #5c77fa);
+}
+
+.circle{
+  background:#3ad29f;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 100px;
+  vertical-align: middle;
+  padding: 30px;
+}
+
+/*Testimoni*/
+.judul{
+  padding-top: 1%;
+  color: #fff;
+  font-weight: bold;
+}
+
+.judul span{
+  color: yellow;
+}
+
+.judul span:hover{
+  color: #5c77fa;
+  cursor: pointer;
+}
+
+.garis{
+  margin-top: 20px;
+  margin-bottom: 30px;
+  width: 100px;
+  height: 2px;
+  background: black;
+}
+
+#testimoni{
+  background-color: #3ad29f;
+}
+
+.flex-area{
+  background-color: #3ad29f;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.single-testi{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  border-radius: 8px;
+  background-color: #fff;
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+}
+
+.gambar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  border: 7px solid #ddd;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  padding: 20px;
+  background-size: cover;
+  background-position: center center;
+}
+
+.single-testi:hover{
+  background: #5c77fa;
+  color: #fff;
+  cursor: pointer;
+}
+
+.nama{
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 48px;
+}
+
+.testi p{
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 15px;
+}
+
+.testi{
+  padding-top: 20px;
+}
+
+/*Aside*/
+.profil{
+  background-color: #5c77fa;
+}
+
+.circle2{
+  width: 100px;
+  height: 100px;
+  border: 7px solid #000;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  padding: 20px;
+  background-size: cover;
+  background-position: center center;
+}
+
+.flex-area3{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.akun{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  width: 300px;
+  margin: 20px;
+  padding: 20px;
+}
+
+.akun a{
+	text-decoration: none;
+	color: #000;
+	font-size: 14px;
+}
+
+.akun h2{
+	color: #fff;
+	font-weight: 800;
+	font-size: 20px;
+}
+
+.akun a:hover{
+	color: yellow;
+	cursor: pointer;
+}
+
+/*WhatsApp*/
+.float{
+  position:fixed;
+  width:60px;
+  height:60px;
+  bottom:40px;
+  right:40px;
+  background-color:#25d366;
+  color:#FFF;
+  border-radius:50px;
+  text-align:center;
+  font-size:30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+
+.float:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.my-float{
+  margin-top:16px;
+}
+
+/*footer*/
+
+footer {
+   padding: 10px;
+   color: white;
+   background-color: #000;
+   text-align: center;
+   font-weight: bold;
+}
+
+/* Media */
+@media screen and (max-width: 600px) {
+  .menu a:not(:first-child) {display: none;}
+  .menu a.icon {
+    float: right;
+    display: block;
+  }
+  .menu.responsive {position: relative;}
+  .menu.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .menu.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .button{
+    font-size: 10px;
+  }
+  .teks-slide{
+    font-size: 10px;
+  }
+  /*Home*/
+  .home{
+    height: 50vh;
+  }
+  .deskripsi{
+    top:20%; 
+    width: 100%;
+    padding: 0;
+   }
+   .deskripsi p{
+      font-size: 14px;
+   }
+   .deskripsi h1{
+    font-size: 30px;
+   }
+   .cari{
+    width: 100%;
+    font-size: 14px; 
+   }
+
+   .float{
+    right: 10px;
+   }
+
+}
